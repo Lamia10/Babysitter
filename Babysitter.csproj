@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46A6F2D2-6F60-4CEB-9D0A-E67A96476307}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Babysitter</RootNamespace>
+    <AssemblyName>Babysitter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutPR.Designer.cs">
+      <DependentUpon>AboutPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBS.Designer.cs">
+      <DependentUpon>AboutBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPabout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPabout.Designer.cs">
+      <DependentUpon>SPabout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SitterProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SitterProfile.Designer.cs">
+      <DependentUpon>SitterProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnC.Designer.cs">
+      <DependentUpon>TnC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panelPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelPR.Designer.cs">
+      <DependentUpon>panelPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panelBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelBS.Designer.cs">
+      <DependentUpon>panelBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startpage.Designer.cs">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BSsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSsignup.Designer.cs">
+      <DependentUpon>BSsignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Psignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Psignup.Designer.cs">
+      <DependentUpon>Psignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parents.Designer.cs">
+      <DependentUpon>Parents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sitters.Designer.cs">
+      <DependentUpon>Sitters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBS.resx">
+      <DependentUpon>AboutBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutPR.resx">
+      <DependentUpon>AboutPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPabout.resx">
+      <DependentUpon>SPabout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SitterProfile.resx">
+      <DependentUpon>SitterProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelPR.resx">
+      <DependentUpon>panelPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelBS.resx">
+      <DependentUpon>panelBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startpage.resx">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSsignup.resx">
+      <DependentUpon>BSsignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Psignup.resx">
+      <DependentUpon>Psignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parents.resx">
+      <DependentUpon>Parents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sitters.resx">
+      <DependentUpon>Sitters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TnC.resx">
+      <DependentUpon>TnC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FMchH1j9zDW6EPpLUDXz--0--8tqa3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-vector-illustration-of-a-family-app-wi_jcpRTwJ5Sa26qBvHw2ySAQ_ZwfxCyaYSMisI7MSTZ_K6w.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\an-illustration-of-a-parent-and-child-in_UMsCN4m1SASKH1p9Ct6DeA_ZwfxCyaYSMisI7MSTZ_K6w.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-vector-illustration-of-a-family-app-wi_jcpRTwJ5Sa26qBvHw2ySAQ_ZwfxCyaYSMisI7MSTZ_K6w1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
